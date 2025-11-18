@@ -1,0 +1,62 @@
+{
+  "labels": [],
+  "comment": "",
+  "fixWithAI": false,
+  "strictness": 2,
+  "commentTypes": [
+    "logic",
+    "syntax",
+    "style"
+  ],
+  "instructions": "",
+  "excludeAuthors": [
+    "dependabot[bot]",
+    "renovate[bot]"
+  ],
+  "ignorePatterns": "greptile.json\n",
+  "summarySection": {
+    "included": true,
+    "collapsible": false,
+    "defaultOpen": false
+  },
+  "triggerOnUpdates": false,
+  "updateSummaryOnly": false,
+  "issuesTableSection": {
+    "included": true,
+    "collapsible": false,
+    "defaultOpen": false
+  },
+  "confidenceScoreSection": {
+    "included": true,
+    "collapsible": false,
+    "defaultOpen": false
+  },
+  "sequenceDiagramSection": {
+    "included": true,
+    "collapsible": false,
+    "defaultOpen": false
+  },
+  "shouldUpdateDescription": false,
+  "updateExistingSummaryComment": false,
+  "customContext": {
+    "other": [
+      {
+        "scope": [],
+        "content": ""
+      }
+    ],
+    "rules": [
+      {
+        "scope": [],
+        "rule": "# Code Review Rules\n\nWhen reviewing code in this repository, apply the following rules:\n\n## 🔧 Error Handling\n- Check that methods validate inputs and handle possible errors.\n- If a method may fail or receive invalid data, ensure it uses proper error handling (e.g., validation or try-catch).\n- Request changes if the code assumes inputs are always valid or could throw unhandled exceptions.\n\n## 🧱 Naming Conventions\n- All class names, method names, and public members in C# must follow **PascalCase**.\n- Request changes if names use snake_case, camelCase, or inconsistent capitalization.\n\n## 📝 Code Comments\n- Public or important methods should have a short descriptive comment explaining their purpose.\n- Request improvements when comments are missing, unclear, or unhelpful.\n\n## 🖨️ Console Logging\n- Console output should be meaningful and descriptive.\n- If `Console.WriteLine` is used, ensure that the message clearly states what is being logged.\n- Flag vague messages like: “Done”, “Here”, “Test”, or unclear outputs.\n\n## ✨ Clean and Readable Code\n- Code must remain clean, readable, and well formatted.\n- Look for messy layout, confusing logic, poor indentation, or inconsistent spacing and request improvements.\n\n## ♻️ Code Duplication\n- Identify duplicate or repeated code across methods, classes, or files.\n- Suggest extracting shared logic into reusable methods or services when duplication is found."
+      }
+    ],
+    "files": [
+      {
+        "scope": [],
+        "path": "",
+        "description": ""
+      }
+    ]
+  }
+}
